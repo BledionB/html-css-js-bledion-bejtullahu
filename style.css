@@ -1,13 +1,30 @@
-<style>
-footer {
-    background-color: #0099ff;
-    height: 50px;
-    margin: -40px 0 0 0;
-}
-footer p{
+ p{
+       background: url(background.jpg);
+         color: rgb(255,0,0);
+        font-size: 32px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: 50px;
+        margin-right: 150px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: blanchedalmond;
+       }
+       div{
 
-text-align: center;
-color: white;
-font-size: 18px;
-}
-</style>
+        padding:50px;    
+        width: 350px;
+        border: 15px solid black;
+        margin: 20px;
+        font-size: 20px;
+        background-color: lightpink;
+
+       }
+       body{
+
+         background-color: green;
+         color: rgb(200,32,12);
+         background: url(background.jpg);
+         background-size: cover;
+
+       }
