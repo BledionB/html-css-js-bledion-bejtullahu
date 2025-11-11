@@ -1,30 +1,50 @@
- p{
-       background: url(background.jpg);
-         color: rgb(255,0,0);
-        font-size: 32px;
-        margin-top: 150px;
-        margin-bottom: 150px;
-        margin-left: 50px;
-        margin-right: 150px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: blanchedalmond;
-       }
-       div{
+@font-face{
+    font-family: "Fake identity";
+    src: url ("CrackedConcrete-Display.ttf");
+}
 
-        padding:50px;    
-        width: 350px;
-        border: 15px solid black;
-        margin: 20px;
-        font-size: 20px;
-        background-color: lightpink;
 
-       }
-       body{
+h1{
 
-         background-color: green;
-         color: rgb(200,32,12);
-         background: url(background.jpg);
-         background-size: cover;
-
-       }
+    color: blue;
+    letter-spacing: 20px;
+    word-spacing: 20px;
+}
+h2{
+    text-decoration: overline;
+}
+h3{
+    text-decoration: line-through;
+}
+h4{
+    text-decoration: underline;
+}
+h5{
+    font-family: "Fake identity" ;
+}
+p{
+    text-indent: 100px;
+    text-align: center;
+    font-family: Brush Script MT,cursive; 
+}
+.MyElement{
+    color: red !important; 
+}
+#NormalText{
+    font-style: normal;
+    font-size: 50px;
+    font-weight: normal;
+}
+#ItalicText{
+    font-style: Italic;
+    font-size: 50px;
+    font-weight: bold;
+}
+#ObliqueText{
+    font-style: oblique;
+    font-size: 50px;
+    font-weight: 900;
+}
+a{
+    color: green;
+}
