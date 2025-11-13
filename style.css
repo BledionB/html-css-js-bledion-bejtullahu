@@ -1,50 +1,48 @@
-@font-face{
-    font-family: "Fake identity";
-    src: url ("CrackedConcrete-Display.ttf");
-}
+ul{
+
+    background-color: white;
+    border: 5px solid grey;
+    list-style-type: none;
+    padding: 20px 50px;
+    font-size: 20px;
 
 
-h1{
+}
+ol{
+    background: red;
+    padding: 20px;
 
-    color: blue;
-    letter-spacing: 20px;
-    word-spacing: 20px;
+
 }
-h2{
-    text-decoration: overline;
+ol li{
+     
+    background-color: red;
+    margin: 32px;
+
 }
-h3{
-    text-decoration: line-through;
+ul li{
+    padding: 8px 16px;
+    border-bottom: 1px solid blue;
 }
-h4{
-    text-decoration: underline;
+div{
+    overflow: hidden;
+    background-color: lightgrey;
+    width: 200px;
+    height: 100px;
+    margin-left: 50px;
+    padding: 20px;
+    border: black 10px solid;
+
+
+
 }
-h5{
-    font-family: "Fake identity" ;
+table{
+    border-collapse: collapse;
+    width: 100%;
 }
-p{
-    text-indent: 100px;
+th, td{
+
     text-align: center;
-    font-family: Brush Script MT,cursive; 
-}
-.MyElement{
-    color: red !important; 
-}
-#NormalText{
-    font-style: normal;
-    font-size: 50px;
-    font-weight: normal;
-}
-#ItalicText{
-    font-style: Italic;
-    font-size: 50px;
-    font-weight: bold;
-}
-#ObliqueText{
-    font-style: oblique;
-    font-size: 50px;
-    font-weight: 900;
-}
-a{
-    color: green;
+    padding: 5px;
+    border: 2px solid black
 }
