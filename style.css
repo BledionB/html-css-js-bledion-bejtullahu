@@ -1,48 +1,53 @@
-ul{
-
-    background-color: white;
-    border: 5px solid grey;
-    list-style-type: none;
-    padding: 20px 50px;
-    font-size: 20px;
-
-
-}
-ol{
-    background: red;
+article p{
+    background: blue;
+    color: white;
     padding: 20px;
-
-
 }
-ol li{
-     
+article > p {
+    background: red;
+}
+article ~ p{
+    background:purple;
+    color:white;
+    padding:20px;
+}
+article + p{
+    background: orange;
+}
+h3:first-child{
+    background-color: green;
+    color: white;
+}
+input:invalid{
+    border: 2px solid red;
+}
+input:valid {
+    border: 2px solid green;
+}
+input:focus{
+    background-color: yellow;
+}
+input:out-of-range{
+    border: red;
+}
+span:first-of-type{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+header p::first-line{
+    color: red;
+}
+h1::before{
+    content:url("Nature.jpg");
+}
+h1::after{
+    content:url("Nature.jpg");
+}
+::selection{
+    color:white;
     background-color: red;
-    margin: 32px;
-
-}
-ul li{
-    padding: 8px 16px;
-    border-bottom: 1px solid blue;
 }
 div{
-    overflow: hidden;
-    background-color: lightgrey;
-    width: 200px;
-    height: 100px;
-    margin-left: 50px;
-    padding: 20px;
-    border: black 10px solid;
-
-
-
-}
-table{
-    border-collapse: collapse;
-    width: 100%;
-}
-th, td{
-
-    text-align: center;
-    padding: 5px;
-    border: 2px solid black
-}
+    opacity: 0.2;
+} 
