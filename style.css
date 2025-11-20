@@ -1,53 +1,109 @@
-article p{
-    background: blue;
-    color: white;
+div#static {
+    position: static;
+    border: 3px solid red;
+    width: 250px;
+    height: 250px;
     padding: 20px;
 }
-article > p {
-    background: red;
+div#relative {
+    position: relative;
+    border: 3px solid blue;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    left: 200px;
+    top: 20px;
+
 }
-article ~ p{
-    background:purple;
-    color:white;
-    padding:20px;
+div#fixed {
+
+    position: fixed;
+    border: 3px solid green;
+     width: 250px;
+    height: 250px;
+    padding: 20px;
+    left: 200px;
+    top: 20px;
 }
-article + p{
-    background: orange;
+div#parent {
+     
+      position: relative;
+      width: 250px;
+      height: 250px;
+      border: 3px solid green;
+
+
 }
-h3:first-child{
-    background-color: green;
+div#absolute {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    right: 80px;
+    left: 70px;
+    color: rgb(110, 54, 54);
+
+}
+div#sticky {
+    position: sticky;
+    top: 0px;
+    background-color: brown;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+ li{
+    float: left;
+ }
+ li a{
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+ }
+
+li a:hover:not(.active) {
+    background-color: #434343;
 }
-input:invalid{
-    border: 2px solid red;
-}
-input:valid {
-    border: 2px solid green;
-}
-input:focus{
-    background-color: yellow;
-}
-input:out-of-range{
-    border: red;
-}
-span:first-of-type{
-    background: black;
+
+
+
+ .active{
+    background-color: #133713;
+    
+ }
+ .navbar{
+    overflow: hidden;
+    background-color: #133713;
+    font-family: 'Times New Roman', Times, serif;
+
+ }
+ .navbar a {
+    float: left;
+    font-size: 12px;
     color: white;
-    padding: 10px;
-}
-header p::first-line{
-    color: red;
-}
-h1::before{
-    content:url("Nature.jpg");
-}
-h1::after{
-    content:url("Nature.jpg");
-}
-::selection{
-    color:white;
-    background-color: red;
-}
-div{
-    opacity: 0.2;
-} 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+ .dropdown{
+    float: left;
+    overflow: hidden;
+
+ }
+ .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 16px ;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+ }
