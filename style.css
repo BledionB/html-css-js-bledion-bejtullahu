@@ -1,59 +1,13 @@
-div{
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
+.container{
+    display: flex;
+    flex-direction:row-reverse;
+    /*flex-direction:row-reverse*/
+    /*flex-direction:column-reverse*/
     background-color: blue;
-    padding: 5px;
-    color: white;
-    transform: scaleX(1.3);
 }
-
-#lev img{
-    transform: scale(1);
-    transition: .3s ease-in-out;
-}
-#lev:hover img{
-    transform: scale(1.3);
-
-}
-
-#leve img{
-    margin-left: 0px;
-    transition: .3s ease-in-out;
-}
-#leve:hover img{
-    margin-left: 30px;
-}
-#level img{
-    filter: blur(3px);
-    transition: .3s ease-in-out;
-}
-#level:hover img{
-    filter: blur(0);
-}
-#levels img{
-    filter: grayscale(100%);
-    transition: .3s ease-in-out;
-}
-#levels:hover{
-    filter: grayscale(0);
-
-}
-.loader{
-    margin: 100px;
-}
-.loader img{
-    display: inline-block;
-    width: 0px;
-    height: 0px;
-    border-radius: 50%;
-    margin-left: 8px;
-    animation: bounce 8s infinite alternate;
-}
-@keyframes bounce{
-    to{
-        width: 150px;
-        height: 150px;
-        transform: translate3d(0, -50px,0);   
-     }
-}
+.container div{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+} 
