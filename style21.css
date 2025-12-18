@@ -1,0 +1,68 @@
+@media all and (max-width: 600px) {
+    body {
+        background: darkblue;
+        color: white;
+    }
+}
+@media all and(orientation: landscape){
+    h1{
+        font-size: 80px;
+    }
+}
+@media all and(orientation: portrait){
+    h1{
+        font-size: 30px;
+    }
+}
+h1{
+    border: 2px solid white;
+    padding: 20px;
+}
+@media (min-width:500px) and (max-widt:700px){
+    img {
+        display: none;
+    }
+}
+@media (min-width:500px){
+    p {
+        column-count: 2;
+    }
+
+}
+/*
+@media only screen and (max-width:600px) -- Extra Small Devices ( Phones )
+@media only screen and (min-width:600px) -- small Devices ( Tablets )
+@media  only screen and (min-width:768px) -- medium Devices ( Landscape tablets )
+@media only screen and (min-width:992px) -- large Devices ( Laptops Desktops )
+@media only screen and (min-width:1200px) -- Extra Large Devices ( Large Laptops and Desktops )
+*/
+
+
+@media print{
+    body{
+        background: transparent;
+    }
+}
+@media only screen and (max-width: 800px){
+    header{
+          flex-direction: column;
+    }
+    nav ul li{
+        width: 100%;
+        text-align: center
+    }
+    header img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-heading h1{
+        font-size: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-heading a {
+        font-size: 13px;
+        padding: 25px;
+    }
+}
