@@ -1,109 +1,86 @@
-console.log("Goodbye");
+function functionName(Parametri1,Parametri2 ){
+    // code that needs so be executed
 
-var x = 10;
-var _value = "Digital School";
+}
+function showMessage(){
+    alert("This message is inside the function");
+}
+ showMessage();
 
-var a = 50 + 50;
-console.log(a);
+ function sum(number1, number2){
+    return number1 + number2;
 
-var b = 20;
-var c = 30;
-var d = b + c;
-console.log(d);
+ }
+ console.log(sum(25,5));
 
-var e = 30;
-var f = 10;
-var g = e - f;
-console.log(g);
+ var result = toCelsius(54);
 
-var h = 100;
-var i = 5;
-var j = h / i;
-console.log(j);
+ console.log("54 fahrenheit is equal to "+result+"celsius");
 
-var k = 10;
-var l = 4;
-var m = k % l;
-console.log(m);
+ function toCelsius(f) {
+    return (5/9) * (f-32);
+ }
+ console.log("54fahrenheit is equals to "+toCelsius(54)+"celsius");
 
-var n = 99;
-n++;
-console.log(n);
+ var arrowFunction = () => alert("Hello world");
+ arrowFunction();
+ var arrowFunction = name => alert('Hello ${name}');
+ arrowFunction("John Doe");
 
-var o = 101;
-o--;
-console.log(o);
+ function newFunction(){
+    var localVar = "This is a local variable";
+    alert(localVar);
 
+ }
 
-var p = 20;
-var q = p ** 2;
-console.log(q);
+ //kjo kupton
+ newFunction();
 
 
-var x = 5;
- 
-var x = 15;
-x+= 5;
-console.log(x);
+ //kjo nuk punon
+ alert(localVar);
 
+ function MinutatNeSekonda(minut) {
+    return minut * 60;
+ }
+ console.log(MinutatNeSekonda(60));
 
-var r = 35;
-r-=5;
-console.log(r);
-
-var s = 10;
-s*=7;
-console.log(s);
-
-var t = 200;
-t/=2;
-console.log(t);
-
-
-var u = 10;
-u%=5;
-console.log(u);
+ //objektet
+ var car ={ name:"bmw", color :"black", year:2025, model:"g80", kilometers: 3321,
  
 
-var v =5;
-var w =5;
-console.log( v == w);
 
-var x = 6;
-var y = 7;
-console.log(x !=y);
+ get getKilometers(){
+    return this.kilometers = kilometers;
+ },
+ set setKilometers(kilometers){
+    this.kilometers = kilometers;
+ }
+};
 
 
-var num1 = 100;
-var num2 = 10;
-console.log( num1 > num2);
 
-var num3 = 1;
-var num5 = 2;
-console.log(num3 < num4);
 
-var num5 = 123;
-var num6 = "123";
-console.log(num5 == num6);
+var school ={
+    name:"Digital School",
+    subject:"programming",
+    studebts:5,
+    year:2026
+};
+alert(car.name);
+
+alert(car['color']);
+
+var computer =new Object();
+computer.name="Nvidia";
+computer.cpu = "i5 12gen";
+computer.ram = "24gb";
+computer.gpu = "rtx 3060";
  
+computer.type = function(){
+    return this.name + " " + this.cpu + " " + this.ram + " " + this.gpu;
+}
 
-var firstname = "Bledion"
-var lastname = "bejtullhu"
-var fullname = firstname  + " " + lastname;
-console.log(fullname);
-
-var School = " Digital school";
-console.log ('Hello from ${school}');
-
-var age = 24;
-console.log(age >=18 &&  age <=65);
- 
-
-var var1 = 5;
-var var2 = 6;
-console.log( var1 == 5 || var2  == 5);
-
-
-var var3 = 9;
-var var4 = 10;
-console.log(!(var3 == var4));
+delete computer.gpu;
+car.setKilometers = 100;
+console.log(car.getKilometers);
